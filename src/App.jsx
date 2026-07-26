@@ -50,7 +50,7 @@ function App() {
   const [error, setError] = useState(null);
   const [voiceListening, setVoiceListening] = useState(false);
   const [voiceSupported, setVoiceSupported] = useState(true);
-  const [voiceTranscript, setVoiceTranscript] = useState('Use voice commands like “Start Pulse Online” or “Stop CareSense ML”.');
+  const [voiceTranscript, setVoiceTranscript] = useState('Use voice commands like "Start Pulse Online" or "Stop CareSense ML".');
   const [voiceStatus, setVoiceStatus] = useState('Ready');
   const recognitionRef = useRef(null);
 
@@ -373,7 +373,7 @@ function App() {
                 </div>
                 <div className="assistant-card">
                   <h3>Voice assistant</h3>
-                  <p>Speak commands while this module is open to manage it faster. Try “Start Pulse Online” or “Stop CareSense ML”.</p>
+                  <p>Speak commands while this module is open to manage it faster. Try "Start Pulse Online" or "Stop CareSense ML".</p>
                   <button
                     className={`action-button ${voiceListening ? 'stop' : 'start'}`}
                     onClick={toggleVoiceAssistant}
